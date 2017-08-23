@@ -63,12 +63,12 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
                 testing_images.append(base_name)
             else:
                 training_images.append(base_name)
-    result[label_name] = {
-         'dir': dir_name,
-         'training': training_images,
-         'testing': testing_images,
-         'validation': validation_images,
-     }  
+        result[label_name] = {
+            'dir': dir_name,
+            'training': training_images,
+            'testing': testing_images,
+            'validation': validation_images,
+        }  
     return result
 
 
